@@ -60,7 +60,7 @@ LSOURCE = ft_memset.c \
 		  ft_nbrlen.c \
 		  ft_strcmp.c \
 		  ft_free_tab.c \
-		  ft_is_str_digit.c \
+		  ft_strdigit.c \
 		  ft_file_format_cmp.c \
 		  ft_count_char_in_str.c \
 		  ft_is_color_range.c \

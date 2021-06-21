@@ -12,7 +12,7 @@
 
 #include "libft.h"
 
-t_list	*ft_lstfind(t_list *lst, void *content, int (*cmp)(void *, void *))
+t_list	*ft_lstfind(t_list *lst, void *content, int (*cmp)())
 {
 	if (lst && cmp)
 	{

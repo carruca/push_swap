@@ -1,0 +1,78 @@
+Mmain	main.c	/^int	main(int argc, char **argv)$/
+add_to_stack	main.c	/^int	add_to_stack(char *arg, t_list **stack_lst)$/
+clone_f	libft/ft_lstclone.c	/^static void	*clone_f(void *content)$/
+ft_atoi	libft/ft_atoi.c	/^int	ft_atoi(const char *str)$/
+ft_bzero	libft/ft_bzero.c	/^void	ft_bzero(void *s, size_t n)$/
+ft_calloc	libft/ft_calloc.c	/^void	*ft_calloc(size_t count, size_t size)$/
+ft_count_char_in_str	libft/ft_count_char_in_str.c	/^int	ft_count_char_in_str(char *str, char c)$/
+ft_file_format_cmp	libft/ft_file_format_cmp.c	/^int	ft_file_format_cmp(char *str, char *format)$/
+ft_free_tab	libft/ft_free_tab.c	/^void	ft_free_tab(char **ptr)$/
+ft_is_color_range	libft/ft_is_color_range.c	/^int	ft_is_color_range(int color)$/
+ft_is_str_digit	libft/ft_is_str_digit.c	/^int	ft_is_str_digit(char *str)$/
+ft_is_valid_file	libft/ft_is_valid_file.c	/^int	ft_is_valid_file(char *path)$/
+ft_isalnum	libft/ft_isalnum.c	/^int	ft_isalnum(int c)$/
+ft_isalpha	libft/ft_isalpha.c	/^int	ft_isalpha(int c)$/
+ft_isascii	libft/ft_isascii.c	/^int	ft_isascii(int c)$/
+ft_isdigit	libft/ft_isdigit.c	/^int	ft_isdigit(int c)$/
+ft_isprint	libft/ft_isprint.c	/^int	ft_isprint(int c)$/
+ft_itoa	libft/ft_itoa.c	/^char	*ft_itoa(int n)$/
+ft_lstadd_back	libft/ft_lstadd_back.c	/^void	ft_lstadd_back(t_list **lst, t_list *new)$/
+ft_lstadd_front	libft/ft_lstadd_front.c	/^void	ft_lstadd_front(t_list **lst, t_list *new)$/
+ft_lstclear	libft/ft_lstclear.c	/^void	ft_lstclear(t_list **lst, void (*del)(void *)/
+ft_lstclone	libft/ft_lstclone.c	/^t_list	*ft_lstclone(t_list *lst, void (*del)(void /
+ft_lstdelone	libft/ft_lstdelone.c	/^void	ft_lstdelone(t_list *lst, void (*del)(void *)/
+ft_lstfind	libft/ft_lstfind.c	/^t_list	*ft_lstfind(t_list *lst, void *content, int/
+ft_lstiter	libft/ft_lstiter.c	/^void	ft_lstiter(t_list *lst, void (*f)(void *))$/
+ft_lstlast	libft/ft_lstlast.c	/^t_list	*ft_lstlast(t_list *lst)$/
+ft_lstmap	libft/ft_lstmap.c	/^t_list	*ft_lstmap(t_list *lst, void *(*f)(void *),/
+ft_lstnew	libft/ft_lstnew.c	/^t_list	*ft_lstnew(void *content)$/
+ft_lstremove_if	libft/ft_lstremove_if.c	/^void	ft_lstremove_if(t_list **alst, void *content,/
+ft_lstsize	libft/ft_lstsize.c	/^int	ft_lstsize(t_list *lst)$/
+ft_lstsize_if	libft/ft_lstsize_if.c	/^int	ft_lstsize_if(t_list *lst, int (*cmp)())$/
+ft_lstsort	libft/ft_lstsort.c	/^void	ft_lstsort(t_list *lst, int (*cmp)())$/
+ft_lsttoa_if	libft/ft_lsttoa_if.c	/^char	**ft_lsttoa_if(t_list *lst, char *(*cpy)(), i/
+ft_memccpy	libft/ft_memccpy.c	/^void	*ft_memccpy(void *dst, const void *src, int c/
+ft_memchr	libft/ft_memchr.c	/^void	*ft_memchr(const void *s, int c, size_t n)$/
+ft_memcmp	libft/ft_memcmp.c	/^int	ft_memcmp(const void *s1, const void *s2, size/
+ft_memcpy	libft/ft_memcpy.c	/^void	*ft_memcpy(void *dst, const void *src, size_t/
+ft_memmove	libft/ft_memmove.c	/^void	*ft_memmove(void *dst, const void *src, size_/
+ft_memset	libft/ft_memset.c	/^void	*ft_memset(void *b, int c, size_t len)$/
+ft_nbrlen	libft/ft_nbrlen.c	/^size_t	ft_nbrlen(long int nbr)$/
+ft_only_spaces_line	libft/ft_only_spaces_line.c	/^int	ft_only_spaces_line(char *line)$/
+ft_putchar_fd	libft/ft_putchar_fd.c	/^void	ft_putchar_fd(char c, int fd)$/
+ft_putendl_fd	libft/ft_putendl_fd.c	/^void	ft_putendl_fd(char *s, int fd)$/
+ft_putnbr_fd	libft/ft_putnbr_fd.c	/^void	ft_putnbr_fd(int n, int fd)$/
+ft_putstr_fd	libft/ft_putstr_fd.c	/^void	ft_putstr_fd(char *s, int fd)$/
+ft_split	libft/ft_split.c	/^char	**ft_split(char const *s, char c)$/
+ft_str_tab_remove	libft/ft_str_tab_remove.c	/^char	*ft_str_tab_remove(char *str)$/
+ft_strchr	libft/ft_strchr.c	/^char	*ft_strchr(const char *s, int c)$/
+ft_strcmp	libft/ft_strcmp.c	/^int	ft_strcmp(const char *s1, const char *s2)$/
+ft_strcpy	libft/ft_strcpy.c	/^char	*ft_strcpy(char *dest, char *src)$/
+ft_strcspn	libft/ft_strcspn.c	/^size_t	ft_strcspn(const char *s, const char *chars/
+ft_strdup	libft/ft_strdup.c	/^char	*ft_strdup(const char *s1)$/
+ft_strjoin	libft/ft_strjoin.c	/^char	*ft_strjoin(char const *s1, char const *s2)$/
+ft_strjoin_btwchar	libft/ft_strjoin_btwchar.c	/^char	*ft_strjoin_btwchar(char const *s1, char cons/
+ft_strlcat	libft/ft_strlcat.c	/^size_t	ft_strlcat(char *dst, const char *src, size/
+ft_strlcpy	libft/ft_strlcpy.c	/^size_t	ft_strlcpy(char *dst, const char *src, size/
+ft_strlen	libft/ft_strlen.c	/^size_t	ft_strlen(const char *s)$/
+ft_strlen_no_tab	libft/ft_str_tab_remove.c	/^static size_t	ft_strlen_no_tab(char *str)$/
+ft_strmapi	libft/ft_strmapi.c	/^char	*ft_strmapi(char const *s, char (*f)(unsigned/
+ft_strncmp	libft/ft_strncmp.c	/^int	ft_strncmp(const char *s1, const char *s2, siz/
+ft_strncpy	libft/ft_strncpy.c	/^char	*ft_strncpy(char *dest, const char *src, size/
+ft_strndup	libft/ft_strndup.c	/^char	*ft_strndup(const char *s1, size_t n)$/
+ft_strnlen	libft/ft_split.c	/^static int	ft_strnlen(char const *s, char c)$/
+ft_strnstr	libft/ft_strnstr.c	/^char	*ft_strnstr(const char *haystack, const char /
+ft_strrchr	libft/ft_strrchr.c	/^char	*ft_strrchr(const char *s, int c)$/
+ft_strspn	libft/ft_strspn.c	/^size_t	ft_strspn(const char *s, const char *charse/
+ft_strtok	libft/ft_strtok.c	/^char	*ft_strtok(char *str, const char *sep)$/
+ft_strtrim	libft/ft_strtrim.c	/^char	*ft_strtrim(char const *s1, char const *set)$/
+ft_substr	libft/ft_substr.c	/^char	*ft_substr(char const *s, unsigned int start,/
+ft_tablecpy	libft/ft_split.c	/^static int	ft_tablecpy(char const *s, char **table/
+ft_tolower	libft/ft_tolower.c	/^int	ft_tolower(int c)$/
+ft_toupper	libft/ft_toupper.c	/^int	ft_toupper(int c)$/
+ft_word_count	libft/ft_split.c	/^static int	ft_word_count(char const *s, char c)$/
+get_line	libft/get_next_line.c	/^static int	get_line(char **line, char **s)$/
+get_next_line	libft/get_next_line.c	/^int	get_next_line(int fd, char **line)$/
+get_output	libft/get_next_line.c	/^static int	get_output(char **line, int fd, int n_b/
+nbrlen	libft/ft_itoa.c	/^static size_t	nbrlen(int nbr)$/
+print_number	main.c	/^void	print_number(void *content)$/

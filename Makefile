@@ -4,8 +4,14 @@ LIBFT_DIR		= libft/
 LNAME			= $(LIBFT_DIR)libft.a
 
 SRC_DIR			= src/
-SRC				:= $(SRC) \
-			   main.c
+SRC				= main.c \
+				  add_to_stack.c \
+				  error_handler.c \
+				  extract_argv.c \
+				  is_duplicate.c \
+				  swap.c \
+				  push.c \
+				  print_number.c \
 
 OBJ				= $(SRC:.c=.o)
 INC				= -I. -I$(LIBFT_DIR)

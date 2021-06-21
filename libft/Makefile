@@ -6,7 +6,7 @@
 #    By: tsierra- <marvin@42.fr>                    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2019/11/07 17:05:33 by tsierra-          #+#    #+#              #
-#    Updated: 2021/05/24 16:53:33 by tsierra-         ###   ########.fr        #
+#    Updated: 2021/06/21 16:22:54 by tsierra-         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -61,6 +61,7 @@ LSOURCE = ft_memset.c \
 		  ft_strcmp.c \
 		  ft_free_tab.c \
 		  ft_strdigit.c \
+		  ft_strneg.c \
 		  ft_file_format_cmp.c \
 		  ft_count_char_in_str.c \
 		  ft_is_color_range.c \

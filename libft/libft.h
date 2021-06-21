@@ -6,7 +6,7 @@
 /*   By: tsierra- <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/11/11 12:15:52 by tsierra-          #+#    #+#             */
-/*   Updated: 2021/06/02 20:19:28 by tsierra-         ###   ########.fr       */
+/*   Updated: 2021/06/21 16:22:23 by tsierra-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -77,6 +77,7 @@ size_t	ft_nbrlen(long int nbr);
 int		ft_strcmp(const char *s1, const char *s2);
 void	ft_free_tab(char **ptr);
 int		ft_strdigit(char *str);
+int		ft_strneg(const char *s);
 int		ft_file_format_cmp(char *str, char *format);
 int		ft_count_char_in_str(char *str, char c);
 int		ft_is_color_range(int color);

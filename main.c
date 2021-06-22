@@ -41,6 +41,6 @@ int	main(int argc, char **argv)
 		ft_lstclear(&a, free);
 		ft_lstclear(&b, free);
 	}
-	system("leaks push_swap");
+//	system("leaks push_swap");
 	return (0);
 }

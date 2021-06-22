@@ -17,14 +17,17 @@ static void	print_number(void *content)
 	int	*nbr;
 
 	nbr = content;
-	printf("%i\n", *nbr);
+	ft_putnbr_fd(*nbr, 1);
+	ft_putstr_fd("\n", 1);
 }
 
 int	print_stacks(t_list *a, t_list *b)
 {
-	printf("stack a:\n");
+	ft_putstr_fd("-\n", 1);
 	ft_lstiter(a, print_number);
-	printf("stack b:\n");
+	ft_putstr_fd("-\na\n\n", 1);
+	ft_putstr_fd("-\n", 1);
 	ft_lstiter(b, print_number);
+	ft_putstr_fd("-\nb\n\n", 1);
 	return (0);
 }

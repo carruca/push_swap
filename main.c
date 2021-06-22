@@ -29,10 +29,13 @@ int	main(int argc, char **argv)
 //			push_b(&b, &a);
 	//		swap_a(&a);
 	//		swap_b(&b);
-			rotate_a(&a);
-			rotate_b(&b);
-			rotate_both(&a, &b);
+//			rotate_a(&a);
+//			rotate_b(&b);
+//			rotate_both(&a, &b);
 //			swap_both(&a, &b);
+			reverse_a(&a);
+			reverse_b(&b);
+			reverse_both(&a, &b);
 			printf("stack a:\n");
 			ft_lstiter(a, print_number);
 			printf("stack b:\n");

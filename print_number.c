@@ -17,5 +17,5 @@ void	print_number(void *content)
 	int	*nbr;
 
 	nbr = content;
-	printf("number = %i\n", *nbr);
+	printf("%i\n", *nbr);
 }

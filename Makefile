@@ -12,6 +12,7 @@ SRC				= main.c \
 				  swap.c \
 				  push.c \
 				  rotate.c \
+				  reverse.c \
 				  print_number.c \
 
 OBJ				= $(SRC:.c=.o)

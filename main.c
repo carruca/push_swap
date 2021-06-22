@@ -27,8 +27,11 @@ int	main(int argc, char **argv)
 			push_b(&b, &a);
 //			push_a(&a, &b);
 //			push_b(&b, &a);
-			swap_a(&a);
-			swap_b(&b);
+	//		swap_a(&a);
+	//		swap_b(&b);
+			rotate_a(&a);
+			rotate_b(&b);
+			rotate_both(&a, &b);
 //			swap_both(&a, &b);
 			printf("stack a:\n");
 			ft_lstiter(a, print_number);
@@ -38,6 +41,6 @@ int	main(int argc, char **argv)
 		ft_lstclear(&a, free);
 		ft_lstclear(&b, free);
 	}
-//	system("leaks push_swap");
+	system("leaks push_swap");
 	return (0);
 }

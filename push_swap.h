@@ -16,5 +16,9 @@ int		swap_both(t_list **alst1, t_list **alst2);
 int		push(t_list **alst1, t_list **alst2);
 int		push_a(t_list **a, t_list **b);
 int		push_b(t_list **b, t_list **a);
+int		rotate(t_list **alst);
+int		rotate_a(t_list **a);
+int		rotate_b(t_list **b);
+int		rotate_both(t_list **a, t_list **b);
 
 #endif

@@ -11,6 +11,7 @@ SRC				= main.c \
 				  is_duplicate.c \
 				  swap.c \
 				  push.c \
+				  rotate.c \
 				  print_number.c \
 
 OBJ				= $(SRC:.c=.o)

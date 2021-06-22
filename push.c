@@ -12,15 +12,6 @@
 
 #include "push_swap.h"
 
-static void	delone_front(t_list **alst)
-{
-	t_list	*lst;
-
-	lst = (*alst)->next;
-	ft_lstdelone(*alst, NULL);
-	*alst = lst;
-}
-
 int	push(t_list **alst1, t_list **alst2)
 {
 	t_list	*lst;
@@ -28,10 +19,28 @@ int	push(t_list **alst1, t_list **alst2)
 	lst = *alst2;
 	if (lst)
 	{
-		ft_lstadd_front(alst1, ft_lstnew(lst->content));
-		delone_front(alst2);
-	//	ft_lstiter(*alst1, print_number);
-	//	ft_lstiter(*alst2, print_number);
+		*alst2 = lst->next;
+		ft_lstadd_front(alst1, lst);
+		return (1);
+	}
+	return (0);
+}
+
+int	push_a(t_list **a, t_list **b)
+{
+	if (push(a, b))
+	{
+		ft_putstr_fd("pa\n", 1);
+		return (1);
+	}
+	return (0);
+}
+
+int	push_b(t_list **b, t_list **a)
+{
+	if (push(b, a))
+	{
+		ft_putstr_fd("pb\n", 1);
 		return (1);
 	}
 	return (0);

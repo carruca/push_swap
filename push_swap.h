@@ -14,5 +14,7 @@ int		swap_a(t_list **alst);
 int		swap_b(t_list **alst);
 int		swap_both(t_list **alst1, t_list **alst2);
 int		push(t_list **alst1, t_list **alst2);
+int		push_a(t_list **a, t_list **b);
+int		push_b(t_list **b, t_list **a);
 
 #endif

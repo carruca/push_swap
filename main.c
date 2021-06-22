@@ -14,27 +14,30 @@
 
 int	main(int argc, char **argv)
 {
-	t_list	*stack_a;
-	t_list	*stack_b;
+	t_list	*a;
+	t_list	*b;
 
-	stack_a = NULL;
-	stack_b = NULL;
+	a = NULL;
+	b = NULL;
 	if (argc > 1)
 	{
-		if (!extract_argv(++argv, &stack_a))
+		if (!extract_argv(++argv, &a))
 		{
-//			swap_a(&stack_a);
-//			swap_b(&stack_b);
-//			swap_both(&stack_a, &stack_b);
-			push(&stack_b, &stack_a);
+			push_b(&b, &a);
+			push_b(&b, &a);
+//			push_a(&a, &b);
+//			push_b(&b, &a);
+			swap_a(&a);
+			swap_b(&b);
+//			swap_both(&a, &b);
 			printf("stack a:\n");
-			ft_lstiter(stack_a, print_number);
+			ft_lstiter(a, print_number);
 			printf("stack b:\n");
-			ft_lstiter(stack_b, print_number);
+			ft_lstiter(b, print_number);
 		}
-		ft_lstclear(&stack_a, free);
-		ft_lstclear(&stack_b, free);
+		ft_lstclear(&a, free);
+		ft_lstclear(&b, free);
 	}
-	system("leaks push_swap");
+//	system("leaks push_swap");
 	return (0);
 }

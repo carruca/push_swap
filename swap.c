@@ -14,20 +14,17 @@
 
 int	swap(t_list **alst)
 {
-	t_list	*swap;
 	t_list	*first;
+	t_list	*second;
 
-	if (*alst)
+	if (*alst && (*alst)->next)
 	{
-		swap = *alst;
-		if (swap->next)
-		{
-			first = swap->next;
-			swap->next = swap->next->next;
-			*alst = first;
-			(*alst)->next = swap;
-			return (1);
-		}
+		first = *alst;
+		second = first->next;
+		first->next = first->next->next;
+		*alst = second;
+		(*alst)->next = first;
+		return (1);
 	}
 	return (0);
 }

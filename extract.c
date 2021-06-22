@@ -1,12 +1,12 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   extract_argv.c                                     :+:      :+:    :+:   */
+/*   extract.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: tsierra- <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/06/21 16:11:54 by tsierra-          #+#    #+#             */
-/*   Updated: 2021/06/21 16:16:52 by tsierra-         ###   ########.fr       */
+/*   Updated: 2021/06/22 19:02:08 by tsierra-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,7 +29,7 @@ int	extract_argv(char **argv, t_list **alst)
 			if (number == -1 || !ft_strdigit(*argv))
 				return (error_handler());
 		}
-		if (is_duplicate(number, alst) || !add_to_stack(number, alst))
+		if (is_duplicate(number, alst) || !fill_stack(number, alst))
 			return (error_handler());
 		argv++;
 	}

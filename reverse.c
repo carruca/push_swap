@@ -6,7 +6,7 @@
 /*   By: tsierra- <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/06/21 19:05:26 by tsierra-          #+#    #+#             */
-/*   Updated: 2021/06/21 19:05:41 by tsierra-         ###   ########.fr       */
+/*   Updated: 2021/06/22 20:41:56 by tsierra-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,16 +14,14 @@
 
 int	reverse(t_list **alst)
 {
-	t_list	*last;
 	t_list	*current;
 
 	if (*alst && (*alst)->next)
 	{
 		current = *alst;
-		while (current->next && current->next->next)
+		while (current->next->next)
 			current = current->next;
-		last = current->next;
-		ft_lstadd_front(alst, last);
+		ft_lstadd_front(alst, current->next);
 		current->next = NULL;
 		return (1);
 	}
@@ -52,9 +50,10 @@ int	reverse_b(t_list **b)
 
 int	reverse_both(t_list **a, t_list **b)
 {
-	if (*a && *b && reverse(a) && reverse(b))
+	if (*a && (*a)->next && *b && (*b)->next
+		&& reverse(a) && reverse(b))
 	{
-		ft_putstr_fd("rra\n", 1);
+		ft_putstr_fd("rrr\n", 1);
 		return (1);
 	}
 	return (0);

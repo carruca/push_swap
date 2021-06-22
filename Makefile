@@ -5,15 +5,15 @@ LNAME			= $(LIBFT_DIR)libft.a
 
 SRC_DIR			= src/
 SRC				= main.c \
-				  add_to_stack.c \
-				  error_handler.c \
-				  extract_argv.c \
+				  fill.c \
+				  error.c \
+				  extract.c \
 				  is_duplicate.c \
 				  swap.c \
 				  push.c \
 				  rotate.c \
 				  reverse.c \
-				  print_number.c \
+				  print.c \
 
 OBJ				= $(SRC:.c=.o)
 INC				= -I. -I$(LIBFT_DIR)

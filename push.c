@@ -6,7 +6,7 @@
 /*   By: tsierra- <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/06/21 19:04:18 by tsierra-          #+#    #+#             */
-/*   Updated: 2021/06/21 22:06:28 by tsierra-         ###   ########.fr       */
+/*   Updated: 2021/06/22 19:19:20 by tsierra-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,13 +14,13 @@
 
 int	push(t_list **alst1, t_list **alst2)
 {
-	t_list	*lst;
+	t_list	*push_node;
 
-	lst = *alst2;
-	if (lst)
+	push_node = *alst2;
+	if (push_node)
 	{
-		*alst2 = lst->next;
-		ft_lstadd_front(alst1, lst);
+		*alst2 = (*alst2)->next;
+		ft_lstadd_front(alst1, push_node);
 		return (1);
 	}
 	return (0);

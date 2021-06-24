@@ -6,7 +6,7 @@
 /*   By: tsierra- <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/06/21 16:11:31 by tsierra-          #+#    #+#             */
-/*   Updated: 2021/06/22 20:26:49 by tsierra-         ###   ########.fr       */
+/*   Updated: 2021/06/24 17:29:21 by tsierra-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -38,8 +38,7 @@ int	main(int argc, char **argv)
 			reverse_both(&a, &b);
 			print_stacks(a, b);
 		}
-		ft_lstclear(&a, free);
-		ft_lstclear(&b, free);
+		free_stacks(&a, &b);
 	}
 //	system("leaks push_swap");
 	return (0);

@@ -13,7 +13,8 @@ SRC				= main.c \
 				  push.c \
 				  rotate.c \
 				  reverse.c \
-				  print.c \
+				  free.c \
+				  print.c
 
 OBJ				= $(SRC:.c=.o)
 INC				= -I. -I$(LIBFT_DIR)

@@ -24,5 +24,6 @@ int	reverse_a(t_list **a);
 int	reverse_b(t_list **b);
 int	reverse_both(t_list **a, t_list **b);
 int	print_stacks(t_list *a, t_list *b);
+int	free_stacks(t_list **a, t_list **b);
 
 #endif

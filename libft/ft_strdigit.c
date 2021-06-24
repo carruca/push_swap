@@ -6,7 +6,7 @@
 /*   By: tsierra- <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/11/27 12:38:19 by tsierra-          #+#    #+#             */
-/*   Updated: 2020/11/27 12:42:38 by tsierra-         ###   ########.fr       */
+/*   Updated: 2021/06/24 20:04:48 by tsierra-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,6 +19,8 @@ int	ft_strdigit(char *str)
 	if (!str)
 		return (0);
 	i = 0;
+	if (str[i] == '-' || str[i] == '+')
+		i++;
 	while (str[i] != '\0')
 	{
 		if (!ft_isdigit(str[i]))

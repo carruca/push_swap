@@ -17,7 +17,7 @@ int	cmp_nbr(int *nbr1, int *nbr2)
 	return (*nbr1 > *nbr2);
 }
 
-t_list	*clone_sort(t_list *alst)
+t_list	*sort_clone(t_list *alst)
 {
 	t_list	*clone_lst;
 
@@ -40,7 +40,7 @@ int	main(int argc, char **argv)
 	{
 		if (!extract_argv(++argv, &a))
 		{
-			clone_a = clone_sort(a);
+			clone_a = sort_clone(a);
 //			push_b(&b, &a);
 //			push_b(&b, &a);
 //			push_a(&a, &b);

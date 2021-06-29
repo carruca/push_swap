@@ -1,39 +1,24 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   print.c                                            :+:      :+:    :+:   */
+/*   is_sorted.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: tsierra- <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/06/21 16:17:38 by tsierra-          #+#    #+#             */
-/*   Updated: 2021/06/28 16:44:21 by tsierra-         ###   ########.fr       */
+/*   Created: 2021/06/28 16:29:31 by tsierra-          #+#    #+#             */
+/*   Updated: 2021/06/28 16:41:56 by tsierra-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "push_swap.h"
 
-static void	print_number(void *content)
+int	is_sorted(t_list *alst, int (*cmp)())
 {
-	int	*nbr;
-
-	nbr = content;
-	ft_putnbr_fd(*nbr, 1);
-	ft_putstr_fd("\n", 1);
-}
-
-int	print_stacks(t_list *a, t_list *b)
-{
-	if (a)
+	while (alst && alst->next)
 	{
-		ft_putstr_fd("-\n", 1);
-		ft_lstiter(a, print_number);
-		ft_putstr_fd("-\na\n\n", 1);
+		if (cmp(alst->content, alst->next->content))
+				return (0);
+		alst = alst->next;
 	}
-	if (b)
-	{
-		ft_putstr_fd("-\n", 1);
-		ft_lstiter(b, print_number);
-		ft_putstr_fd("-\nb\n\n", 1);
-	}
-	return (0);
+	return (1);
 }

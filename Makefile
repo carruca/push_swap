@@ -9,11 +9,13 @@ SRC				= main.c \
 				  error.c \
 				  extract.c \
 				  is_duplicate.c \
+				  is_sorted.c \
 				  swap.c \
 				  push.c \
 				  rotate.c \
 				  reverse.c \
 				  free.c \
+				  ft_lstat.c \
 				  print.c
 
 OBJ				= $(SRC:.c=.o)

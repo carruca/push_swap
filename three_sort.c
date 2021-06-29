@@ -29,7 +29,7 @@ int	find_minimum_number(t_list **alst)
 
 int	three_selection_sort(t_list **a, t_list **b)
 {
-	int	
+	int		ret;
 	t_list	*current;
 	t_list	*first;
 	t_list	*second;
@@ -39,5 +39,28 @@ int	three_selection_sort(t_list **a, t_list **b)
 	ret = cmp_int((*a)->content, (*a)->next->content);
 	current = current->next;
 
+	return (0);
+}
+
+void	find_pos(t_list *alst, int nbr_to_find)
+{
+	while (alst)
+	{
+		if ()
+		alst = alst->next;
+		(*pos)++;
+	}
+}
+
+int	sort_small(t_list **a, t_list **b, t_list **clone_a)
+{
+	int	nbr;
+	int	pos;
+	int	to_find;
+
+	nbr = 0;
+	pos = 0;
+	to_find = (*clone_a)->content;
+	if ()
 	return (0);
 }

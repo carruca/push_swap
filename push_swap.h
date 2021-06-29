@@ -25,5 +25,7 @@ int	reverse_b(t_list **b);
 int	reverse_both(t_list **a, t_list **b);
 int	print_stacks(t_list *a, t_list *b);
 int	free_stacks(t_list **a, t_list **b);
+int	is_sorted(t_list *alst, int (*cmp)());
+int	ft_lstat(t_list *alst, void *content, int (*cmp)());
 
 #endif
